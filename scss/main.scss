@@ -13,7 +13,7 @@ button {
 }
 
 .vh-dependent {
-	height: 35vh;
+	height: 40vh;
 	display: flex;
 	align-items: center;
 }
@@ -51,6 +51,10 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+.header {
+	height: 95vh;
+}
+
 .nav {
 	padding-top: 59px;
 	margin-bottom: 127px;
@@ -81,9 +85,9 @@ h1, h2, h3, h4, h5, h6 {
 .video {
 	 position: absolute;
 	 left: 0;
-	 bottom: 20%;
+	 bottom: 15%;
 	 width: 40%;
-	 height: 37%;
+	 height: 33%;
 	 display: block;
 	 background: url('../img/video.jpg') no-repeat center center;
 	 display: flex;
@@ -99,5 +103,42 @@ h1, h2, h3, h4, h5, h6 {
 	 }
 }
 
-/*==========================*/
+/*===PROMLEMS=======================*/
 
+.problems {
+	padding-top: 137px;
+}
+
+.about {
+
+}
+
+.about__title {
+	font-size: 38px;
+	line-height: 125%;
+	letter-spacing: -0.01em;
+	margin-bottom: 30px;
+}
+
+.about__text {
+	line-height: 155%;
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
+
+.about__author {
+	background: url('../img/author.jpg') no-repeat left center;
+	padding: 7px 0px 7px 96px;
+	margin-top: 60px;
+}
+
+.about__name {
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 145%;
+}
+
+.about__post {
+	margin-bottom: 0;
+}
