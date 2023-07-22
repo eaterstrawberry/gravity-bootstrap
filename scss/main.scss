@@ -189,7 +189,6 @@ h2 {
 /*====CAROUSEL======================*/
 
 .owl-carousel .item, .owl-item {
-	width: 825px !important;
 	position: relative;
 }
 
@@ -224,4 +223,62 @@ h2 {
 	margin-top: -32px;
 	margin-left: -32px;
 	cursor: pointer;
+}
+
+/*====RESULT======================*/
+
+.result {
+	padding-top: 181px;
+}
+
+.collage {
+	position: absolute;
+	width: 50%;
+	height: 540px;
+	background: url('../img/img_6.jpg') no-repeat left top / 80% 70%;
+	left: 0;
+}
+
+.collage img {
+	display: block;
+	width: 350px;
+	height: 453px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	box-shadow: 30px 80px 130px rgb(0,0,0,0.25);
+}
+
+.easy {
+	padding-left: 65px;
+	margin-top: 30px;
+}
+
+.easy__title {
+	line-height: 125%;
+	letter-spacing: -0.01em;
+	margin-bottom: 30px;
+}
+
+.easy__text {
+	margin-bottom: 52px;
+}
+
+.easy__point {
+	padding: 20px 0px 20px 83px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 500;
+	line-height: 171%;
+	letter-spacing: 0.28em;
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+
+.easy__point_ultimate {
+	background: url('../img/100-icon.svg') no-repeat left center;
+}
+
+.easy__point_minimal {
+	background: url('../img/bag .svg') no-repeat left center;
 }

@@ -4,7 +4,7 @@ $(function(){
 		margin:30,
 		nav:true,
 		dots: false,
-		startPosition: 1,
+		startPosition: 0,
 		navText: ['<img src="img/arrow-left.svg">', '<img src="img/arrow-right.svg">'],
 		responsive:{
 			 0:{
@@ -14,7 +14,7 @@ $(function(){
 				  items:1
 			 },
 			 1000:{
-				  items:1
+				  items:1.35
 			 }
 		}
   });
