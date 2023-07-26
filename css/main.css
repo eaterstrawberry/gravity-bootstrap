@@ -386,3 +386,14 @@ h3 {
 .clients__row {
   margin-top: 82px;
 }
+
+/*====FOOTER======================*/
+.footer {
+  margin-top: 136px;
+  height: 240px;
+  background: #515151;
+}
+
+.footer__logo {
+  margin: 109px 0px 109px 0px;
+}
