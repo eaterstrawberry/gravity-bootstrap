@@ -41,6 +41,10 @@ h2 {
 	font-size: 38px;
 }
 
+h3 {
+	font-size: 22px;
+}
+
 /*===HEADER=======================*/
 
 .btn {
@@ -185,11 +189,11 @@ h2 {
 
 /*====CAROUSEL======================*/
 
-.owl-carousel .item, .owl-item {
+.works-carousel .item, .owl-item {
 	position: relative;
 }
 
-.owl-carousel {
+.works-carousel {
 	margin-top: 99px;
 }
 
@@ -201,11 +205,11 @@ h2 {
 	margin: 0;
 }
 
-.owl-theme .owl-nav {
+.works-carousel .owl-nav {
 	margin-top: 50px;
 }
 
-.owl-prev {
+.works-carousel .owl-prev {
 	margin-right: 25px !important;
 }
 
@@ -355,5 +359,47 @@ h2 {
 	display: flex !important; /* по умолчанию показываем нужный блок */
  }
 
+/*====TESTIMONIALS======================*/
 
+.testimonials {
+	padding-top: 248px;
+}
 
+.contributor {
+	margin-top: 121px;
+}
+
+.contributor__title {
+	margin-bottom: 13px;
+	line-height: 145%;
+	font-weight: 500;
+}
+
+.cont__photo {
+	display: block;
+}
+
+.contributor-carousel .owl-nav {
+	display: flex;
+	margin-top: -50px;
+	position: relative;
+}
+
+.contributor-carousel  .owl-prev {
+	margin-right: 25px;
+}
+
+/*====CLIENTS======================*/
+
+.clients {
+	padding-top: 278px;
+}
+
+.section-title__label_black {
+	color: black;
+	margin-bottom: 17px;
+}
+
+.clients__row {
+	margin-top: 82px;
+}
