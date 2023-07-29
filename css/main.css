@@ -5,6 +5,7 @@ body {
   font-size: 18px;
   color: #8d8d8d;
   background: #F4F4F4;
+  overflow-x: hidden;
 }
 
 button {
@@ -20,10 +21,26 @@ ul, li {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 .vh-dependent {
   height: 40vh;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 992px) {
+  .vh-dependent {
+    display: block;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .vh-dependent {
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .be-static {
@@ -40,6 +57,11 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   font-size: 38px;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+  }
 }
 
 h3 {
@@ -70,6 +92,11 @@ h3 {
 .header {
   height: 95vh;
 }
+@media screen and (max-width: 768px) {
+  .header {
+    height: auto;
+  }
+}
 
 .nav {
   padding-top: 59px;
@@ -81,6 +108,16 @@ h3 {
   font-size: 60px;
   line-height: 116%;
   letter-spacing: -0.01em;
+}
+@media screen and (max-width: 992px) {
+  .offer-cont__title {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .offer-cont__title {
+    min-width: 0;
+  }
 }
 
 .offer-cont__text {
@@ -96,6 +133,15 @@ h3 {
   position: absolute;
   right: 0;
   top: 142px;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    margin-top: 50px;
+  }
 }
 
 .video {
@@ -117,10 +163,28 @@ h3 {
   width: 65px;
   height: 65px;
 }
+@media screen and (max-width: 768px) {
+  .video {
+    bottom: 15%;
+    width: 50%;
+    height: 60%;
+  }
+}
 
 /*===PROMLEMS=======================*/
 .problems {
   padding-top: 137px;
+}
+@media screen and (max-width: 375px) {
+  .problems {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    margin-top: 40px;
+  }
 }
 
 .about__title {
@@ -141,6 +205,11 @@ h3 {
   padding: 7px 0px 7px 96px;
   margin-top: 60px;
 }
+@media screen and (max-width: 768px) {
+  .about__author {
+    margin-top: 30px;
+  }
+}
 
 .about__name {
   font-size: 22px;
@@ -155,6 +224,12 @@ h3 {
 /*===SERVICES=======================*/
 .services {
   padding-top: 142px;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 576px) {
+  .services {
+    padding-top: 100px;
+  }
 }
 
 .section-title__label {
@@ -174,6 +249,11 @@ h3 {
 .services-list {
   margin-top: 70px;
 }
+@media screen and (max-width: 576px) {
+  .services-list {
+    margin-top: 20px;
+  }
+}
 
 .services-list__item {
   line-height: 155%;
@@ -183,6 +263,17 @@ h3 {
 .services-list_left {
   margin-left: 37px;
 }
+@media screen and (max-width: 768px) {
+  .services-list_left {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-list_right {
+    margin-right: 20px;
+  }
+}
 
 /*====CAROUSEL======================*/
 .works-carousel .item, .owl-item {
@@ -191,6 +282,11 @@ h3 {
 
 .works-carousel {
   margin-top: 99px;
+}
+@media screen and (max-width: 768px) {
+  .works-carousel {
+    margin-top: 50px;
+  }
 }
 
 .owl-carousel .owl-dots, .owl-theme .owl-nav {
@@ -226,6 +322,16 @@ h3 {
 .result {
   padding-top: 181px;
 }
+@media screen and (max-width: 768px) {
+  .result {
+    padding-top: 140px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .result {
+    padding-top: 100px;
+  }
+}
 
 .collage {
   position: absolute;
@@ -233,6 +339,12 @@ h3 {
   height: 540px;
   background: url("../img/img_6.jpg") no-repeat left top/80% 70%;
   left: 0;
+}
+@media screen and (max-width: 768px) {
+  .collage {
+    position: relative;
+    width: 100%;
+  }
 }
 
 .collage img {
@@ -244,10 +356,21 @@ h3 {
   bottom: 0;
   box-shadow: 30px 80px 130px rgba(0, 0, 0, 0.25);
 }
+@media screen and (max-width: 375px) {
+  .collage img {
+    right: -90px;
+  }
+}
 
 .easy {
   padding-left: 65px;
   margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .easy {
+    margin-top: 50px;
+    padding-left: 0;
+  }
 }
 
 .easy__title {
@@ -259,6 +382,11 @@ h3 {
 .easy__text {
   margin-bottom: 52px;
 }
+@media screen and (max-width: 576px) {
+  .easy__text {
+    margin-bottom: 32px;
+  }
+}
 
 .easy__point {
   padding: 20px 0px 20px 83px;
@@ -269,6 +397,11 @@ h3 {
   letter-spacing: 0.28em;
   font-size: 14px;
   margin-bottom: 25px;
+}
+@media screen and (max-width: 992px) {
+  .easy__point {
+    margin-bottom: 15px;
+  }
 }
 
 .easy__point_ultimate {
@@ -283,6 +416,16 @@ h3 {
 .works {
   padding-top: 283px;
 }
+@media screen and (max-width: 992px) {
+  .works {
+    padding-top: 140px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .works {
+    padding-top: 100px;
+  }
+}
 
 .works-tabs {
   margin-top: 80px;
@@ -292,10 +435,31 @@ h3 {
   letter-spacing: 0.28em;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1200px) {
+  .works-tabs {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .works-tabs {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .works-tabs {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+}
 
 .works-tabs__item a {
   text-decoration: none;
   color: #8d8d8d;
+}
+@media screen and (max-width: 576px) {
+  .works-tabs__item {
+    margin-bottom: 25px;
+  }
 }
 
 .works-tabs__item.active a {
@@ -307,11 +471,31 @@ h3 {
   margin-top: 108px;
   margin-bottom: 52px;
 }
+@media screen and (max-width: 992px) {
+  .works-wrap {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .works-wrap {
+    margin-bottom: 20px;
+  }
+}
 
 .works-wrap__item {
   margin-bottom: 30px;
   display: block;
   position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .works-wrap__item {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .works-wrap__item {
+    width: 100%;
+  }
 }
 
 .works-wrap__item img {
@@ -321,6 +505,12 @@ h3 {
 .works-wrap__item img:hover {
   box-shadow: -30px 80px 200px rgba(0, 0, 0, 0.25);
   transform: scale(1.1);
+}
+@media screen and (max-width: 1200px) {
+  .works-wrap__item img {
+    display: block;
+    width: 100%;
+  }
 }
 
 .works-wrap__item:hover:after {
@@ -344,13 +534,57 @@ h3 {
   display: flex !important; /* по умолчанию показываем нужный блок */
 }
 
+@media screen and (max-width: 768px) {
+  .works__text {
+    margin-bottom: 30px;
+  }
+}
+
 /*====TESTIMONIALS======================*/
 .testimonials {
   padding-top: 248px;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 992px) {
+  .testimonials {
+    padding-top: 180px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .testimonials {
+    padding-top: 140px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .testimonials {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section-title__heading_review {
+    font-size: 22px;
+  }
 }
 
 .contributor {
   margin-top: 121px;
+}
+@media screen and (max-width: 1200px) {
+  .contributor {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contributor {
+    margin-top: 35px;
+  }
 }
 
 .contributor__title {
@@ -368,6 +602,11 @@ h3 {
   margin-top: -50px;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .contributor-carousel .owl-nav {
+    margin-top: 50px;
+  }
+}
 
 .contributor-carousel .owl-prev {
   margin-right: 25px;
@@ -376,6 +615,21 @@ h3 {
 /*====CLIENTS======================*/
 .clients {
   padding-top: 278px;
+}
+@media screen and (max-width: 992px) {
+  .clients {
+    padding-top: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .clients {
+    padding-top: 140px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .clients {
+    padding-top: 100px;
+  }
 }
 
 .section-title__label_black {
@@ -386,12 +640,50 @@ h3 {
 .clients__row {
   margin-top: 82px;
 }
+@media screen and (max-width: 768px) {
+  .clients__row {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .clients__worked {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .clients__worked {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .clients__row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .clients__item {
+    margin-bottom: 50px;
+  }
+}
 
 /*====FOOTER======================*/
 .footer {
   margin-top: 136px;
   height: 240px;
   background: #515151;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer {
+    margin-top: 50px;
+  }
 }
 
 .footer__logo {
