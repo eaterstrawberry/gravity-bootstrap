@@ -1,10 +1,10 @@
 body {
+	overflow-x: hidden;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	color: #8d8d8d;
 	background: #F4F4F4;
-	overflow-x: hidden;
 }
 
 button {
@@ -96,15 +96,14 @@ h3 {
 }
 
 .offer-cont__title {
-	min-width: 474px;
 	font-size: 60px;
 	line-height: 116%;
 	letter-spacing: -0.01em;
 	@media screen and (max-width: 992px) {
 		font-size: 50px;
 	}
-	@media screen and (max-width: 375px) {
-		min-width: 0;
+	@media screen and (min-width: 550px) {
+		min-width: 474px;
 	}
 }
 
