@@ -595,8 +595,12 @@ h3 {
 }
 
 .clients__item {
+	transition: all 0.2s ease;
 	@media screen and (max-width: 576px) {
 		margin-bottom: 50px;
+	}
+	&:hover {
+		opacity: 0.7;
 	}
 }
 
@@ -616,4 +620,15 @@ h3 {
 
 .footer__logo {
 	margin: 109px 0px 109px 0px;
+}
+
+.footer__link {
+	color: #8d8d8d;
+	text-decoration: none;
+  	position: relative;
+  	transition: all 0.2s ease 0s;
+	cursor: pointer;
+	&:hover {
+		color: #6b6a6a;
+	}
 }
